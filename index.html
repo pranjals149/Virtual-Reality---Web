@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Tutorial</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-box
+            color="#3f4f3f"
+            position="0 1 0"
+            rotation="20 40 0">
+        </a-box>
+        <a-sky color="#3c4c2c"></a-sky>
+
+        <a-camera
+            position="0 1 4"
+            cursor-visible="true"
+            cursor-scale="2"
+            cursor-color="#0095DD"
+            cursor-opacity="0.5">
+        </a-camera>
+
+        
+        <a-light type="ambient" color="red"></a-light>
+
+        <a-entity
+            geometry="
+                primitive: circle;
+                radius: 1;
+                radiusTubular: 0.1;
+                segmentsTubular: 12;"
+            rotation="10 0 0"
+            position="0 -1 0">
+        </a-entity>
+        <a-torus color="#43A367" arc="360" radius="3" radius-tubular="0.1"></a-torus>
+    </a-scene>
+</body>
+</html>
